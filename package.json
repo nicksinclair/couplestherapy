@@ -3,10 +3,13 @@
   "description": "The official Couples Therapy website",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "dev": "npm run serve",
-    "serve": "eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "sass src/styles/scss:public/styles/css --watch",
+    "build:sass": "sass src/styles/scss:public/styles/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm run watch:eleventy & npm run watch:sass",
+    "build": "npm run build:eleventy & npm run build:sass",
+    "test": "echo \"Write tests!\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,9 @@
   },
   "license": "ISC",
   "homepage": "http://couplestherapy.band",
+  "dependencies": {
+    "sass": "^1.69.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",

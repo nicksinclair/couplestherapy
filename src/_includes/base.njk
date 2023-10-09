@@ -7,16 +7,16 @@
     <meta name="author" content="Couples Therapy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ title | default: "Couples Therapy" }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ 'styles/css/main.css' | url }}" media="screen" />
+
+    <title>{{ title }}</title>
 </head>
 <body>
-    <h1>Couples Therapy</h1>
-    <p>Under construction... 🚧</p>
-    <nav>
+    <!-- <nav>
         <a href="/about">About</a>
-      </nav>
+      </nav> -->
     <main>
-        {{ content }}
+        {% block content %} {{ content | safe }} {% endblock %}
     </main>
 </body>
 </html>
