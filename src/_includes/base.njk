@@ -1,22 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Couples Therapy">
-    <meta name="keywords" content="Couples Therapy, Therapy, Couples, band, music">
-    <meta name="author" content="Couples Therapy">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Couples Therapy" />
+    <meta
+      name="keywords"
+      content="Couples Therapy, Therapy, Couples, band, music"
+    />
+    <meta name="author" content="Couples Therapy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="{{ 'styles/css/main.css' | url }}" media="screen" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ 'styles/css/main.css' | url }}"
+      media="screen"
+    />
 
     <title>{{ title }}</title>
-</head>
-<body>
-    <!-- <nav>
-        <a href="/about">About</a>
-      </nav> -->
-    <main>
-        {% block content %} {{ content | safe }} {% endblock %}
-    </main>
-</body>
+  </head>
+  <body>
+    <nav>
+      <a href="/about">About</a>
+      <a href="/music">Music</a>
+    </nav>
+    <main>{% block content %} {{ content | safe }} {% endblock %}</main>
+  </body>
 </html>
