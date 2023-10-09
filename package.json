@@ -1,0 +1,26 @@
+{
+  "name": "couplestherapy",
+  "version": "1.0.0",
+  "description": "The official Couples Therapy website",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "npm run serve",
+    "serve": "npx @11ty/eleventy --serve1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicksinclair/couplestherapy.git"
+  },
+  "keywords": [],
+  "author": "Nick Sinclair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicksinclair/couplestherapy/issues"
+  },
+  "homepage": "https://github.com/nicksinclair/couplestherapy#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
