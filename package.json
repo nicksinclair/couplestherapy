@@ -1,12 +1,11 @@
 {
   "name": "couplestherapy",
-  "version": "1.0.0",
   "description": "The official Couples Therapy website",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "eleventy",
     "dev": "npm run serve",
-    "serve": "npx @11ty/eleventy --serve1",
+    "serve": "eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,13 +13,15 @@
     "url": "git+https://github.com/nicksinclair/couplestherapy.git"
   },
   "keywords": [],
-  "author": "Nick Sinclair",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nicksinclair/couplestherapy/issues"
+  "author": {
+    "name": "Nick Sinclair",
+    "url": "https://nicksinclair.github.io"
   },
-  "homepage": "https://github.com/nicksinclair/couplestherapy#readme",
+  "license": "ISC",
+  "homepage": "http://couplestherapy.band",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
   }
 }
