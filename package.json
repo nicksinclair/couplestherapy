@@ -1,0 +1,36 @@
+{
+  "name": "couplestherapy",
+  "description": "The official Couples Therapy website",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass src/styles/scss:public/styles/css --watch",
+    "build:sass": "sass src/styles/scss:public/styles/css",
+    "build:sass:prod": "sass src/static/scss:public/static/css --style compressed",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": " ELEVENTY_ENV=development eleventy",
+    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
+    "start": "npm run watch:eleventy & npm run watch:sass",
+    "build": "npm run build:eleventy & npm run build:sass",
+    "build:prod": "npm run build:eleventy:prod & npm run build:sass:prod",
+    "test": "echo \"Write tests!\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicksinclair/couplestherapy.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Nick Sinclair",
+    "url": "https://nicksinclair.github.io"
+  },
+  "license": "ISC",
+  "homepage": "http://couplestherapy.band",
+  "dependencies": {
+    "sass": "^1.69.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  }
+}
