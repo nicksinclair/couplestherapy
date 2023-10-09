@@ -5,10 +5,13 @@
   "scripts": {
     "watch:sass": "sass src/styles/scss:public/styles/css --watch",
     "build:sass": "sass src/styles/scss:public/styles/css",
+    "build:sass:prod": "sass src/static/scss:public/static/css --style compressed",
     "watch:eleventy": "eleventy --serve",
-    "build:eleventy": "eleventy",
+    "build:eleventy": " ELEVENTY_ENV=development eleventy",
+    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
     "start": "npm run watch:eleventy & npm run watch:sass",
     "build": "npm run build:eleventy & npm run build:sass",
+    "build:prod": "npm run build:eleventy:prod & npm run build:sass:prod",
     "test": "echo \"Write tests!\" && exit 1"
   },
   "repository": {
