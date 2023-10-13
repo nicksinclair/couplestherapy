@@ -1,6 +1,19 @@
-h1 {
-  background-color: darkblue;
-  color: orange;
-  padding: 10px;
-  text-align: center;
+@import 'nav';
+
+@import 'page';
+
+body {
+  background-color: black;
+  color: whitesmoke;
+  margin: 0;
+
+  main {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 16px 64px 16px;
+
+    // article {
+    //   max-width: 65ch;
+    // }
+  }
 }

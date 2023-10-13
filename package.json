@@ -1,7 +1,6 @@
 {
   "name": "couplestherapy",
   "description": "The official Couples Therapy website",
-  "main": "index.js",
   "scripts": {
     "format": "prettier --write \"**/*.{js,json,md,njk,scss,yml}\"",
     "watch:sass": "sass src/styles/scss:public/styles/css --watch",
@@ -27,6 +26,7 @@
   "license": "ISC",
   "homepage": "http://couplestherapy.band",
   "dependencies": {
+    "@11ty/eleventy-img": "^3.1.1",
     "sass": "^1.69.0"
   },
   "devDependencies": {
