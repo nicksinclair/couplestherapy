@@ -1,8 +1,60 @@
-h1 {
-  background-color: darkblue;
-  color: orange;
-  padding: 10px;
-  text-align: center;
+nav {
+  align-items: center;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 24px auto;
+  max-width: 800px;
+  padding: 15px;
+  position: sticky;
+  top: 24px;
+}
+nav .logo {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+nav .logo img {
+  aspect-ratio: 1/1;
+  height: 48px;
+  width: 48px;
+}
+nav .navigation-links {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .navigation-links a:hover {
+  text-decoration: underline solid;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+  margin: 0;
+}
+body main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 16px 64px 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
