@@ -1,7 +1,6 @@
 {
   "name": "couplestherapy",
   "description": "The official Couples Therapy website",
-  "main": "index.js",
   "scripts": {
     "format": "prettier --write \"**/*.{js,json,md,njk,scss,yml}\"",
     "watch:sass": "sass src/styles/scss:public/styles/css --watch",
@@ -31,6 +30,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.1",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "prettier": "^3.0.3"

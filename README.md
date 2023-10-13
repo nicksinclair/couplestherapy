@@ -2,7 +2,7 @@
 
 _The official Couples Therapy website_
 
-![Logo](./src/media/images/logo.png)
+![Logo](./src/static/logo.png)
 
 ## Development
 

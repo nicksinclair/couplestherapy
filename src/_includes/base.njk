@@ -13,16 +13,31 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{{ 'styles/css/main.css' | url }}"
+      href="{{ '/styles/css/main.css' | url }}"
       media="screen"
     />
 
-    <title>{{ title }}</title>
+    <title>
+      {{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}
+    </title>
   </head>
   <body>
     <nav>
-      <a href="/about">About</a>
-      <a href="/music">Music</a>
+      <a href="/" class="logo">
+        {% image "couplestherapy.svg", "Couples Therapy Logo" %}
+        <span>Couples Therapy</span>
+      </a>
+      <ul class="navigation-links">
+        <li>
+          <a href="/music">Music</a>
+        </li>
+        <li>
+          <a href="/shows">Shows</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+      </ul>
     </nav>
     <main>{% block content %} {{ content | safe }} {% endblock %}</main>
   </body>
